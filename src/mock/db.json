@@ -7,6 +7,14 @@
       "latitude": -16.643434,
       "longitude": -49.274327,
       "id": 1
+    },
+    {
+      "cep": "88015420",
+      "numero": 10,
+      "residentes": 10,
+      "latitude": -27.5900416,
+      "longitude": -48.5445115,
+      "id": 2
     }
   ]
 }
