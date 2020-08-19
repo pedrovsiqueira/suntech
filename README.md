@@ -64,13 +64,13 @@ new credential for the Maps API Key. Create a .env file on the root of this proj
  using the .env-example and paste your API Key after the REACT_APP_GOOGLE_API_KEY=
 ````
 
-3. Run the app
+4. Run the app
 
 ```sh
 yarn start
 ```
 
-4. Make sure the following ports are available:
+5. Make sure the following ports are available:
 
 ```sh
 PORTS: 5000 and 3000.
