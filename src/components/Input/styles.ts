@@ -52,6 +52,7 @@ export const StyledInput = styled.input`
   border: 0;
   padding: 15px;
   width: 100%;
+  text-align: center;
 
   &::placeholder {
     color: #a2a2a2;
@@ -63,6 +64,7 @@ export const StyledInputMask = styled(ReactInputMask)`
   border: 0;
   padding: 15px;
   width: 100%;
+  text-align: center;
 
   &::placeholder {
     color: #a2a2a2;
