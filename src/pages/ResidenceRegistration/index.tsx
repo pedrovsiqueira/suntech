@@ -74,7 +74,7 @@ const ResidenceRegistration: React.FC = () => {
       addToast({
         type: 'error',
         description:
-          'Ocorreu um erro ao cadastrar o residência, verifique o CEP',
+          'Ocorreu um erro ao cadastrar a residência, verifique o CEP',
         title: 'Erro no servidor',
       });
     }
