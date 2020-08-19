@@ -4,11 +4,11 @@
 
 ## About The Project
 
-The challenge was to build a system for home registration. After the a user registers a new home, the system then adds the coordinates through the latitude and longitude coordinates and adds them to a heat map using the Google Maps API. For the input validations I used YUP and for the Form I used the unform library. 
+The challenge was to build a system for home registration. After the user registers a new home, the system then adds the coordinates through the latitude and longitude, and adds them to a heat map using the Google Maps API. For the input validations I used YUP and for the Form I used the unform library. 
 
-The first step I took when I started the development was to decide how many pages I would have. After figuring out I would need two pages I started thinking about how I could structure the components. I figured I would need a navbar to navigate between the two pages, so that was the first component I created. After finishing the navbar, i would need an input and a button component for my home registration page. For the registration page, I decided to go with a very simple form using only the following inputs: CEP, Number and Number of Residents. I decided not to add a latitude and logitude input because I figured nobody memorizes thoses numbers. Because I didn't create the latitude and longitude inputs, I had to get them via the Google API using the CEP to find the coordinates. 
+The first step I took when I started the development was to decide how many pages I would have. After figuring out I would need two pages I started thinking about how I could structure the components. I figured I would need a navbar to navigate between the two pages, so that was the first component I created. After finishing the navbar, I would need an input and a button component for my home registration page. For the registration page, I decided to go with a very simple form using only the following inputs: CEP, Number and Number of Residents. I decided not to add a latitude and logitude input because I figured nobody memorizes those numbers. Because I didn't create the latitude and longitude inputs, I had to get them via the Google API using the CEP to find the coordinates. 
 
-After finishing my Registration page I moved on to my Home page which is where the heat map is. While searching for a package, I came across one called GoogleMapReact. After reading the documentation I figured out how to use it and decided to implement it on this project. My logic for the heat map was very simple. The instructions said that i had to consider the number of residents when making the map. So my calculation was (lat, lng) * residents. So basically, if I have 10 residents living in the same coordinates, I would have 10 of the same latitude and longitude coordinates for that specific address. 
+After finishing my Registration page I moved on to my Home page which is where the heat map is. While searching for a package, I came across one called GoogleMapReact. After reading the documentation I figured out how to use it and decided to implement it on this project. My logic for the heat map was very simple. The instructions said that I had to consider the number of residents when making the map. So my calculation was (lat, lng) * residents. So basically, if I have 10 residents living in the same coordinates, I would have 10 of the same latitude and longitude coordinates for that specific address. 
 
 Strong Points
 - Clean Code;
@@ -27,7 +27,7 @@ Weak Points
 ### Built With:
 
 - [Typescript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-- [ReactJS](https://pt-br.reactjs.org/) - Uma biblioteca JavaScript para criar interfaces de usuário.
+- [ReactJS](https://pt-br.reactjs.org/) - A JavaScript library for building user interfaces.
 - [Styled Components](https://styled-components.com/) - Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress.
 
 <!-- GETTING STARTED -->
