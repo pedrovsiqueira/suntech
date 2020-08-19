@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import ReactInputMask from 'react-input-mask';
 import Tooltip from '../../components/Tooltip';
 
 interface StyledProps {
@@ -46,7 +47,18 @@ export const Container = styled.div<StyledProps>`
   }
 `;
 
-export const StyledInput = styled.input<StyledProps>`
+export const StyledInput = styled.input`
+  background: transparent;
+  border: 0;
+  padding: 15px;
+  width: 100%;
+
+  &::placeholder {
+    color: #a2a2a2;
+  }
+`;
+
+export const StyledInputMask = styled(ReactInputMask)`
   background: transparent;
   border: 0;
   padding: 15px;

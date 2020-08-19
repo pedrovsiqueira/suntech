@@ -10,24 +10,30 @@ import { useField } from '@unform/core';
 import { IconBaseProps } from 'react-icons';
 import { FiAlertCircle } from 'react-icons/fi';
 import {
-  Container, StyledInput, Error, StyledLabel,
+  Container,
+  StyledInput,
+  Error,
+  StyledLabel,
+  StyledInputMask,
 } from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   icon?: React.ComponentType<IconBaseProps>;
   label: string;
+  mask?: string;
   handleChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input2: React.FC<InputProps> = ({
+const Input: React.FC<InputProps> = ({
   name,
   icon: Icon,
   label,
+  mask,
   handleChange,
   ...rest
 }) => {
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<any>(null);
   const { fieldName, error, registerField } = useField(name);
 
   const [isFocused, setIsFocused] = useState(false);
@@ -56,14 +62,24 @@ const Input2: React.FC<InputProps> = ({
         isFocused={isFocused}
         data-testid="input-container"
       >
-        <StyledInput
-          isErrored={!!error}
-          onFocus={handleInputFocus}
-          onBlur={handleInputBlur}
-          onChange={handleChange}
-          ref={inputRef}
-          {...rest}
-        />
+        {mask ? (
+          <StyledInputMask
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+            onChange={handleChange}
+            ref={inputRef}
+            mask={mask}
+            {...rest}
+          />
+        ) : (
+          <StyledInput
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+            onChange={handleChange}
+            ref={inputRef}
+            {...rest}
+          />
+        )}
 
         {error && (
           <Error title={error}>
@@ -75,4 +91,4 @@ const Input2: React.FC<InputProps> = ({
   );
 };
 
-export default Input2;
+export default Input;
