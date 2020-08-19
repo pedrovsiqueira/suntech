@@ -3,7 +3,7 @@
     {
       "cep": "74565019",
       "numero": 10,
-      "residentes": 2,
+      "residentes": 4,
       "latitude": -16.643434,
       "longitude": -49.274327,
       "id": 1
@@ -11,10 +11,42 @@
     {
       "cep": "88015420",
       "numero": 10,
-      "residentes": 10,
+      "residentes": 5,
       "latitude": -27.5900416,
       "longitude": -48.5445115,
       "id": 2
+    },
+    {
+      "cep": "80420120",
+      "numero": 10,
+      "residentes": 3,
+      "latitude": -25.4379832,
+      "longitude": -49.2767207,
+      "id": 3
+    },
+    {
+      "cep": "69900016",
+      "numero": 10,
+      "residentes": 5,
+      "latitude": -9.9787065,
+      "longitude": -67.8108713,
+      "id": 4
+    },
+    {
+      "cep": "40010020",
+      "numero": 10,
+      "residentes": 5,
+      "latitude": -12.9691791,
+      "longitude": -38.5112021,
+      "id": 5
+    },
+    {
+      "cep": "66010070",
+      "numero": 20,
+      "residentes": 2,
+      "latitude": -1.4421274,
+      "longitude": -48.4953632,
+      "id": 6
     }
   ]
 }
