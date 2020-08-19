@@ -70,7 +70,7 @@ new credential for the Maps API Key. Create a .env file on the root of this proj
 yarn start
 ```
 
-5. Make sure the following ports are available:
+5. Make sure the following both ports are available:
 
 ```sh
 PORTS: 5000 and 3000.
