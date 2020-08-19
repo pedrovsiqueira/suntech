@@ -1,0 +1,12 @@
+{
+  "residences": [
+    {
+      "cep": "74565019",
+      "numero": 10,
+      "residentes": 2,
+      "latitude": -16.643434,
+      "longitude": -49.274327,
+      "id": 1
+    }
+  ]
+}
